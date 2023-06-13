@@ -75,10 +75,10 @@ def calcy():
     speak(b)
 def notepad():
     def open_Notepad(MyText):
-        f = open(r"C:\Users\Vaishnavi\OneDrive\Desktop\testing.txt", "a")
+        f = open(r"C:\Users\\OneDrive\Desktop\testing.txt", "a")
         f.write(MyText)
         f.close()
-        os.startfile(r"C:\Users\Vaishnavi\OneDrive\Desktop\testing.txt")
+        os.startfile(r"C:\Users\Rahul\OneDrive\Desktop\testing.txt")
     speak("Speak what you want to type in notepad")
     a="Speak what you want to type in notepad"
     textArea.insert(tk.END, a)
@@ -139,9 +139,9 @@ def commands(s):
                 webbrowser.open_new_tab(
                     "https://wynk.in/music?gclid=CjwKCAjw4qCKBhAVEiwAkTYsPGM460uYugTQh9lqxcuuYFpQOII3diw0jyJxqQMhIiEifV5fqFDeDBoC-64QAvD_BwE")
                 speak("opening...wynk MUSIC")
-            elif 'lms' in s or 'cbit' in s:
-                webbrowser.open_new_tab("https://learning.cbit.org.in/")
-                speak("opening...CBIT LMS")
+            elif 'lms' in s or 'Vasavi' in s:
+                webbrowser.open_new_tab("https://learning.Vasavi.org.in/")
+                speak("opening...Vasavi LMS")
             elif 'calendar' in s or 'event' in s:
                 webbrowser.open_new_tab("https://calendar.google.com/calendar/u/0/r?tab=rc&pli=1")
                 speak("opening...GOOGLE CALENDER")
@@ -336,7 +336,7 @@ def start():
     textArea.insert(tk.END,a)
     speak("Loading your Python Voice assistant ")
     wishMe()
-    load = Image.open("C:/Users/Vaishnavi/OneDrive/Desktop/vAssistant.jpg")
+    load = Image.open("C:/Users/Rahul/OneDrive/Desktop/vAssistant.jpg")
     render = ImageTk.PhotoImage(load)
     img = tk.Label(window, image=render)
     img.place(x=600, y=30)
@@ -356,7 +356,7 @@ button1=tk.Button(w,text="START",font=("Arial",15),command=start,fg="white",bg="
 button1.place(x=200,y=400)
 button=tk.Button(w,text="QUIT",font=("Arial",15),command=quit,fg="white",bg="red")
 button.place(x=400,y=400)
-load = Image.open("C:/Users/Vaishnavi/OneDrive/Desktop/mike.png")
+load = Image.open("C:/Users/Rahul/OneDrive/Desktop/mike.png")
 render = ImageTk.PhotoImage(load)
 img = tk.Label(w, image=render)
 img.place(x=200, y=100)
